@@ -1,62 +1,147 @@
-# LaunchApp
+<p align="center">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="https://img.shields.io/badge/LaunchApp-Build_→_Launch_→_Grow-white?style=for-the-badge&labelColor=000000&color=ffffff">
+    <source media="(prefers-color-scheme: light)" srcset="https://img.shields.io/badge/LaunchApp-Build_→_Launch_→_Grow-black?style=for-the-badge&labelColor=ffffff&color=000000">
+    <img alt="LaunchApp" src="https://img.shields.io/badge/LaunchApp-Build_→_Launch_→_Grow-black?style=for-the-badge">
+  </picture>
+</p>
 
-**We build autonomous production systems.**
+<h3 align="center">Streamline the process for founders to launch businesses<br/>and for businesses to grow and manage themselves.</h3>
 
-AO is a daemon that runs your engineering org while you sleep. Define agents, workflows, and quality gates in YAML. AO dispatches AI models to plan, code, review, test, and merge — 24/7, without human intervention.
-
-Software was the first use case. It's not the last.
+<p align="center">
+  <a href="https://github.com/launchapp-dev/ao">AO Engine</a> · <a href="https://github.com/launchapp-dev/ao-dashboard">Dashboard</a> · <a href="https://github.com/launchapp-dev/ao-docs">Docs</a> · <a href="https://github.com/launchapp-dev/ao-skills">Skills</a> · <a href="https://github.com/launchapp-dev/design-system">Design System</a>
+</p>
 
 ---
 
-### What AO Does
+### The Mission
 
-```
-Task in  →  Daemon picks it up  →  Worktree created  →  Agent writes code
-         →  PM reviews quality  →  EM reviews security  →  Tests pass
-         →  PR merged  →  You wake up to shipped features
-```
+LaunchApp eliminates the gap between **"I have an idea"** and **"I have a running business."** We build the tools, templates, and infrastructure that let founders launch fast — and the autonomous systems that keep those businesses shipping, improving, and scaling without burning out.
 
-- **YAML-defined teams** — Your engineering org is a config file, not a headcount
-- **Local-first, BYOK** — Your machine, your API keys, your code never leaves your network
-- **Multi-model routing** — Claude, GPT, Gemini, and more with automatic fallback chains
-- **Git worktree isolation** — Every task gets a real branch, not a cloud sandbox
-- **PM/EM review loops** — Agents don't just code. They review, reject, and approve.
-- **Self-healing** — Rate limited? Switches providers. Agent crashed? Daemon restarts it.
-- **Domain-agnostic** — The same architecture orchestrates software, media production, data pipelines, and 300+ workflow types across 30 verticals
+---
 
-### What We've Shipped With AO
+### What We Build
 
-- **180+ PRs merged autonomously** in AO's first week of operation across 4 SaaS frameworks
-- **StoryForge** — A media production pipeline (world-building, scripting, image generation, voice synthesis, music, video assembly) orchestrated by the same daemon
-- **Design system** — Bootstrapped by AO, now used across all our products
-- **6 daemons running 24/7** managing our entire portfolio
+<table>
+<tr>
+<td width="50%" valign="top">
+
+**AO — Autonomous Orchestrator**
+
+A Rust-based daemon that runs your engineering org while you sleep. Define agents, workflows, and quality gates in YAML. AO dispatches AI models to plan, code, review, test, and merge — 24/7.
+
+- Multi-phase pipelines with PM/EM review loops
+- Multi-model routing with automatic fallback
+- Git worktree isolation for parallel work
+- Self-healing daemon that never stops
+- Domain-agnostic — orchestrates code, media, data, and more
+
+</td>
+<td width="50%" valign="top">
+
+**LaunchApp Templates**
+
+Production SaaS starters across 4 frameworks — built and maintained by AO.
+
+- **Next.js** — App Router + React 19
+- **Nuxt** — Vue 3 + Nitro
+- **SvelteKit** — Svelte 5 + SSR
+- **React Router 7** — Flagship full-stack template
+- Web + Mobile monorepo support
+- Auth, billing, email, storage, i18n — all included
+
+</td>
+</tr>
+<tr>
+<td width="50%" valign="top">
+
+**Launchpad BaaS**
+
+Modular backend SDK with 13+ composable packages:
+
+`@launchpad/auth` · `@launchpad/db` · `@launchpad/storage` · `@launchpad/payments` · `@launchpad/realtime` · `@launchpad/push` · `@launchpad/cms` · `@launchpad/workflows` · `@launchpad/ai` · `@launchpad/analytics` · `@launchpad/identity` · `@launchpad/offline` · `@launchpad/testing`
+
+Pick what you need. Own your backend. No vendor lock-in.
+
+</td>
+<td width="50%" valign="top">
+
+**StoryForge**
+
+AI media production pipeline orchestrated by AO:
+
+- World-building with persistent character memory
+- Script writing with plot continuity enforcement
+- Image generation (Nano Banana, FLUX)
+- Voice synthesis (ElevenLabs, Fish Audio)
+- Music and SFX composition
+- Episode assembly and human review gates
+
+Same daemon. Same YAML. Same MCP architecture. Different vertical.
+
+</td>
+</tr>
+</table>
+
+---
 
 ### The Ecosystem
 
-| Project | What It Is |
-|---------|-----------|
-| **AO** | Autonomous orchestration engine (Rust, 16 crates) |
-| **LaunchApp Templates** | SaaS starters for Next.js, Nuxt, SvelteKit, React Router — built and maintained by AO |
-| **Launchpad BaaS** | Modular backend SDK (auth, db, storage, payments, realtime, and more) |
-| **Design System** | Radix + Tailwind component library |
-| **StoryForge** | AI media production pipeline |
-| **AO Dashboard** | Fleet monitoring (Tauri + React) |
-| **AO Skills** | Workflow packs for testing, security, devops, and framework-specific optimization |
+| Project | Description | Stack |
+|:--------|:-----------|:------|
+| **AO** | Autonomous orchestration engine | Rust, 16 crates |
+| **AO Dashboard** | Fleet monitoring desktop app | Tauri 2 + React 19 |
+| **AO Skills** | Workflow packs (testing, security, devops) | YAML + Claude |
+| **AO Starter** | Project scaffolding CLI | Node.js |
+| **LaunchApp Templates** | SaaS starters across 4 frameworks | TypeScript, React Router 7, Next.js, Nuxt, SvelteKit |
+| **Launchpad BaaS** | Modular backend SDK (13+ packages) | TypeScript, Hono, Drizzle, PostgreSQL |
+| **Design System** | Component library | Radix UI + Tailwind CSS 4 |
+| **StoryForge** | Media production pipeline | PostgreSQL, MCP servers, multi-model AI |
+
+---
+
+### By the Numbers
+
+<table>
+<tr>
+<td align="center"><strong>180+</strong><br/><sub>PRs merged autonomously<br/>in AO's first week</sub></td>
+<td align="center"><strong>4</strong><br/><sub>SaaS frameworks<br/>built by AO</sub></td>
+<td align="center"><strong>13+</strong><br/><sub>Launchpad SDK<br/>packages</sub></td>
+<td align="center"><strong>6+</strong><br/><sub>daemons running<br/>24/7</sub></td>
+<td align="center"><strong>300+</strong><br/><sub>pipeline use cases<br/>across 30 verticals</sub></td>
+</tr>
+</table>
+
+---
 
 ### The Stack
 
-**Rust** for the orchestration engine. **TypeScript** for the product ecosystem. **PostgreSQL + Drizzle** for data. **React Router 7, Next.js, Nuxt, SvelteKit** for templates. **Hono** for APIs. **Tailwind CSS 4** for styling. **Tauri 2** for desktop apps.
+<p align="center">
+  <img src="https://img.shields.io/badge/Rust-000000?style=flat-square&logo=rust&logoColor=white" alt="Rust" />
+  <img src="https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white" alt="TypeScript" />
+  <img src="https://img.shields.io/badge/React-61DAFB?style=flat-square&logo=react&logoColor=black" alt="React" />
+  <img src="https://img.shields.io/badge/Next.js-000000?style=flat-square&logo=next.js&logoColor=white" alt="Next.js" />
+  <img src="https://img.shields.io/badge/Nuxt-00DC82?style=flat-square&logo=nuxt.js&logoColor=white" alt="Nuxt" />
+  <img src="https://img.shields.io/badge/Svelte-FF3E00?style=flat-square&logo=svelte&logoColor=white" alt="Svelte" />
+  <img src="https://img.shields.io/badge/Tailwind_CSS-06B6D4?style=flat-square&logo=tailwindcss&logoColor=white" alt="Tailwind" />
+  <img src="https://img.shields.io/badge/PostgreSQL-4169E1?style=flat-square&logo=postgresql&logoColor=white" alt="PostgreSQL" />
+  <img src="https://img.shields.io/badge/Tauri-FFC131?style=flat-square&logo=tauri&logoColor=black" alt="Tauri" />
+  <img src="https://img.shields.io/badge/Hono-E36002?style=flat-square&logo=hono&logoColor=white" alt="Hono" />
+  <img src="https://img.shields.io/badge/Drizzle-C5F74F?style=flat-square&logo=drizzle&logoColor=black" alt="Drizzle" />
+</p>
 
-### Why AO Is Different
+---
 
-Every AI coding tool on the market builds a better individual coder. AO builds the organization around the coders.
+### The Vision
 
-Cursor is an IDE. Devin is a cloud agent. AO is a **local-first, self-healing, domain-agnostic production system** that runs entire workflows autonomously — from requirements through merge, across any domain, 24/7.
-
-No other tool orchestrates PM/EM review loops, routes across 6+ LLM providers with automatic fallback, manages fleet-wide operations across 50+ repos, and handles non-code production work. AO does all of this from a single YAML config.
+**Phase 1** — Prove AO can autonomously build and maintain production codebases *(done)*
+<br/>**Phase 2** — Sell templates and launch AO Pro *(active)*
+<br/>**Phase 3** — AO Enterprise: on-prem, SSO, fleet management, SLA support
+<br/>**Phase 4** — LaunchApp Cloud: hosted AO + Launchpad BaaS, one-click deploy
+<br/>**Phase 5** — Ecosystem: third-party workflows, skill packs, template marketplace
 
 ---
 
 <p align="center">
-  <b>Define your team in YAML. Ship while you sleep.</b>
+  <strong>Launch fast. Grow autonomously. Scale with AI.</strong>
 </p>
