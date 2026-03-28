@@ -112,7 +112,6 @@ AO is a daemon that runs autonomous production workflows while you sleep. Define
 | [`worktree-manager`](https://github.com/launchapp-dev/worktree-manager) | AI-powered parallel dev with git worktrees |
 | [`ai-model-registry`](https://github.com/launchapp-dev/ai-model-registry) | MCP server for AI model metadata |
 | [`create-launchapp`](https://github.com/launchapp-dev/create-launchapp) | Project launcher CLI |
-| [`better-auth`](https://github.com/launchapp-dev/better-auth) | Authentication framework |
 | [`figma-tailwind-plugin`](https://github.com/launchapp-dev/figma-tailwind-plugin) | Figma to Tailwind React components |
 | [`launchpad-db-engine`](https://github.com/launchapp-dev/launchpad-db-engine) | Database engine with multi-tenancy |
 
