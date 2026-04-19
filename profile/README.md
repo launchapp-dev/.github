@@ -9,8 +9,8 @@
 <h3 align="center">Autonomous production systems for founders who ship.</h3>
 
 <p align="center">
-  <a href="https://github.com/launchapp-dev/ao">AO Engine</a>
-  · <a href="https://github.com/launchapp-dev/ao-cli">AO CLI</a>
+  <a href="https://github.com/launchapp-dev/ao">Animus install only</a>
+  · <a href="https://github.com/launchapp-dev/animus-cli">Animus CLI</a>
   · <a href="https://github.com/launchapp-dev/ao-dashboard">Dashboard</a>
   · <a href="https://github.com/launchapp-dev/ao-docs">Docs</a>
   · <a href="https://github.com/launchapp-dev/ao-skills">Skills</a>
@@ -28,18 +28,18 @@
 
 <br/>
 
-## AO — The Autonomous Orchestrator
+## Animus — The Autonomous Orchestrator
 
-AO is a daemon that runs autonomous production workflows while you sleep. Define agents, workflows, and quality gates in YAML. AO dispatches AI models to plan, code, review, test, and merge — 24/7, without human intervention.
+Animus is an orchestation platform that runs autonomous production workflows while you sleep. Define agents, workflows, and quality gates in YAML. AO dispatches AI models to plan, code, review, test, and merge — 24/7, without human intervention.
 
 **Software was the first use case. It's not the last.**
 
 ```
                     ┌─────────────────────────────────────────────────────┐
-                    │                   AO DAEMON (24/7)                  │
+                    │                   Animus DAEMON (24/7)              │
                     ├─────────────────────────────────────────────────────┤
                     │                                                     │
-  Task In ─────►   │  Worktree ──► Agent Writes Code ──► Tests Pass      │
+  Task In ─────►    │  Worktree ──► Agent Writes Code ──► Tests Pass      │
                     │      │                                  │           │
                     │      ▼                                  ▼           │
                     │  PM Reviews Quality            EM Reviews Security  │
@@ -58,48 +58,48 @@ AO is a daemon that runs autonomous production workflows while you sleep. Define
 <tr>
 <td width="50%" valign="top">
 
-#### AO Core
+#### Animus Core
 
 | Repo | Description |
 |:-----|:-----------|
-| [`ao`](https://github.com/launchapp-dev/ao) | Install script and entry point |
-| [`ao-cli`](https://github.com/launchapp-dev/ao-cli) | The orchestration engine (Rust) |
-| [`ao-projects`](https://github.com/launchapp-dev/ao-projects) | Task and requirements management |
-| [`ao-fleet`](https://github.com/launchapp-dev/ao-fleet) | Fleet control plane for multi-project orchestration |
-| [`ao-dashboard`](https://github.com/launchapp-dev/ao-dashboard) | Fleet monitoring desktop app (Tauri + React) |
-| [`ao-docs`](https://github.com/launchapp-dev/ao-docs) | Documentation |
+| [`animus`](https://github.com/launchapp-dev/ao) | Install script and entry point |
+| [`animus-cli`](https://github.com/launchapp-dev/animus-cli) | The orchestration engine (Rust) |
+| [`animus-projects`](https://github.com/launchapp-dev/ao-projects) | Task and requirements management |
+| [`animus-fleet`](https://github.com/launchapp-dev/ao-fleet) | Fleet control plane for multi-project orchestration |
+| [`animus-dashboard`](https://github.com/launchapp-dev/ao-dashboard) | Fleet monitoring desktop app (Tauri + React) |
+| [`animus-docs`](https://github.com/launchapp-dev/ao-docs) | Documentation |
 
 </td>
 <td width="50%" valign="top">
 
-#### AO Skills & Packs
+#### Animus Skills & Packs
 
 | Repo | Description |
 |:-----|:-----------|
-| [`ao-skills`](https://github.com/launchapp-dev/ao-skills) | Claude integration skills |
-| [`ao-core-packs`](https://github.com/launchapp-dev/ao-core-packs) | Core workflow packs |
-| [`ao-starter`](https://github.com/launchapp-dev/ao-starter) | `create-ao` scaffolding CLI |
-| [`ao-skill-testing`](https://github.com/launchapp-dev/ao-skill-testing) | Automated test generation |
-| [`ao-skill-security`](https://github.com/launchapp-dev/ao-skill-security) | Security scanning and auditing |
-| [`ao-skill-devops`](https://github.com/launchapp-dev/ao-skill-devops) | CI/CD and deployment |
-| [`ao-workflow-examples`](https://github.com/launchapp-dev/ao-workflow-examples) | Real-world workflow examples |
+| [`animus-skills`](https://github.com/launchapp-dev/ao-skills) | Claude integration skills |
+| [`animus-core-packs`](https://github.com/launchapp-dev/ao-core-packs) | Core workflow packs |
+| [`animus-starter`](https://github.com/launchapp-dev/ao-starter) | `create-ao` scaffolding CLI |
+| [`animus-skill-testing`](https://github.com/launchapp-dev/ao-skill-testing) | Automated test generation |
+| [`animus-skill-security`](https://github.com/launchapp-dev/ao-skill-security) | Security scanning and auditing |
+| [`animus-skill-devops`](https://github.com/launchapp-dev/ao-skill-devops) | CI/CD and deployment |
+| [`animus-workflow-examples`](https://github.com/launchapp-dev/ao-workflow-examples) | Real-world workflow examples |
 
 </td>
 </tr>
 <tr>
 <td width="50%" valign="top">
 
-#### AO Fleet Tools
+#### Animus Fleet Tools
 
 | Repo | Description |
 |:-----|:-----------|
-| [`ao-fleet-pack`](https://github.com/launchapp-dev/ao-fleet-pack) | Conductor, watchdog, syncer agents |
-| [`ao-fleet-tools`](https://github.com/launchapp-dev/ao-fleet-tools) | Fleet monitoring shell tools |
-| [`ao-examples`](https://github.com/launchapp-dev/ao-examples) | Starter YAML configs |
-| [`ao-skill-nextjs`](https://github.com/launchapp-dev/ao-skill-nextjs) | Next.js workflow optimization |
-| [`ao-skill-nuxt`](https://github.com/launchapp-dev/ao-skill-nuxt) | Nuxt workflow optimization |
-| [`ao-skill-sveltekit`](https://github.com/launchapp-dev/ao-skill-sveltekit) | SvelteKit workflow optimization |
-| [`ao-skill-react-router`](https://github.com/launchapp-dev/ao-skill-react-router) | React Router workflow optimization |
+| [`animus-fleet-pack`](https://github.com/launchapp-dev/ao-fleet-pack) | Conductor, watchdog, syncer agents |
+| [`animus-fleet-tools`](https://github.com/launchapp-dev/ao-fleet-tools) | Fleet monitoring shell tools |
+| [`animus-examples`](https://github.com/launchapp-dev/ao-examples) | Starter YAML configs |
+| [`animus-skill-nextjs`](https://github.com/launchapp-dev/ao-skill-nextjs) | Next.js workflow optimization |
+| [`animus-skill-nuxt`](https://github.com/launchapp-dev/ao-skill-nuxt) | Nuxt workflow optimization |
+| [`animus-skill-sveltekit`](https://github.com/launchapp-dev/ao-skill-sveltekit) | SvelteKit workflow optimization |
+| [`animus-skill-react-router`](https://github.com/launchapp-dev/ao-skill-react-router) | React Router workflow optimization |
 
 </td>
 <td width="50%" valign="top">
@@ -125,7 +125,7 @@ AO is a daemon that runs autonomous production workflows while you sleep. Define
 
 <br/>
 
-## What Makes AO Different
+## What Makes Animus Different
 
 <table>
 <tr>
@@ -147,7 +147,7 @@ AO is a daemon that runs autonomous production workflows while you sleep. Define
 <br/>
 <strong>Multi-Model Routing</strong>
 <br/><br/>
-<sub>Claude, GPT, Gemini, and more with automatic fallback chains. Rate limited? AO switches providers silently.</sub>
+<sub>Claude, GPT, Gemini, and more with automatic fallback chains. Rate limited? animus switches providers silently.</sub>
 <br/><br/>
 </td>
 </tr>
@@ -190,7 +190,7 @@ AO is a daemon that runs autonomous production workflows while you sleep. Define
 
 #### LaunchApp Templates `private — coming soon`
 
-Production SaaS starters across 4 frameworks, built and maintained by AO:
+Production SaaS starters across 4 frameworks, built and maintained by animus:
 
 - **React Router 7** — Flagship full-stack template
 - **Next.js** — App Router + React 19
@@ -217,7 +217,7 @@ Pick what you need. Own your backend. Zero vendor lock-in.
 
 #### StoryForge `private — coming soon`
 
-AI media production pipeline orchestrated by AO. Proof that the architecture generalizes beyond code:
+AI media production pipeline orchestrated by Animus. Proof that the architecture generalizes beyond code:
 
 - World-building with persistent character memory
 - Script writing with plot continuity enforcement
@@ -229,9 +229,9 @@ Same daemon. Same YAML. Same MCP. Different vertical.
 </td>
 <td width="50%" valign="top">
 
-#### AO Cloud `planned`
+#### Animus Cloud `planned`
 
-Hosted AO orchestration — no CLI setup required:
+Hosted Animus orchestration — no CLI setup required:
 
 - Cloud-managed daemons
 - Team collaboration and fleet dashboards
@@ -257,11 +257,11 @@ Hosted AO orchestration — no CLI setup required:
 <tr>
 <td align="center" width="20%">
 <h2>180+</h2>
-<sub>PRs merged autonomously<br/>in AO's first week</sub>
+<sub>PRs merged autonomously<br/>in Animus's first week</sub>
 </td>
 <td align="center" width="20%">
 <h2>16</h2>
-<sub>Rust crates in<br/>the AO engine</sub>
+<sub>Rust crates in<br/>the Animus engine</sub>
 </td>
 <td align="center" width="20%">
 <h2>36+</h2>
@@ -269,7 +269,7 @@ Hosted AO orchestration — no CLI setup required:
 </td>
 <td align="center" width="20%">
 <h2>4</h2>
-<sub>SaaS frameworks<br/>built by AO</sub>
+<sub>SaaS frameworks<br/>built by Animus</sub>
 </td>
 <td align="center" width="20%">
 <h2>300+</h2>
@@ -309,18 +309,18 @@ Hosted AO orchestration — no CLI setup required:
 ## Roadmap
 
 ```
-  DONE        ACTIVE       NEXT                PLANNED             FUTURE
-  ─────       ──────       ────                ───────             ──────
-  Phase 1     Phase 2      Phase 3             Phase 4             Phase 5
-  Prove AO    Templates    AO Enterprise       LaunchApp Cloud     Ecosystem
-              + AO Pro     on-prem, SSO        hosted AO + BaaS    marketplace
-                           fleet mgmt          one-click deploy    3rd party packs
-  ✓ 180+      ◆ SaaS       ○ RBAC + audit      ○ Cloud daemons     ○ Skill store
+  DONE          ACTIVE       NEXT                PLANNED                FUTURE
+  ─────         ──────       ────                ───────                ──────
+  Phase 1       Phase 2      Phase 3             Phase 4                Phase 5
+  Prove Animus  Templates    Animus Enterprise   LaunchApp Cloud        Ecosystem
+               + Animus Pro  on-prem, SSO        hosted Animus + BaaS   marketplace
+                              fleet mgmt         one-click deploy       3rd party packs
+  ✓ 180+       ◆ SaaS        ○ RBAC + audit      ○ Cloud daemons        ○ Skill store
     PRs         templates    logs
-  ✓ 6+        ◆ Workflow   ○ SLA support       ○ Team dashboards   ○ Template
-    daemons     packs                                                marketplace
-  ✓ Design    ◆ AO Pro     ○ Enterprise        ○ Usage-based       ○ Plugin
-    system      beta         licensing            pricing             ecosystem
+  ✓ 6+         ◆ Workflow    ○ SLA support       ○ Team dashboards      ○ Template
+    daemons     packs                                                   marketplace
+  ✓ Design     ◆ Animus Pro  ○ Enterprise        ○ Usage-based          ○ Plugin
+    system       beta         licensing            pricing              ecosystem
 ```
 
 <br/>
@@ -330,7 +330,7 @@ Hosted AO orchestration — no CLI setup required:
 <p align="center">
   <strong>Define your team in YAML. Ship while you sleep.</strong>
   <br/><br/>
-  <a href="https://github.com/launchapp-dev/ao">Get Started with AO</a>
+  <a href="https://github.com/launchapp-dev/ao">Get Started with Animus</a>
   · <a href="https://github.com/launchapp-dev/ao-docs">Read the Docs</a>
   · <a href="https://github.com/launchapp-dev/ao-workflow-examples">See Examples</a>
 </p>
